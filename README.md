@@ -17,7 +17,9 @@ FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your own Antivirus. The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities.
 
 all_in_one_first.bat - script for initial setup after Windows installation (first use on a PC)
+
 all_in_one_lite.bat - script for subsequent configuration, for example after Win Updating (second use +)
+
 all_in_one_free.bat - script can run anytime
 
 1. First use * .bat (as Administrator)
@@ -52,7 +54,9 @@ FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус. Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. 
 
 all_in_one_first.bat - скрипт для первоначальной настройки после установки Windows (первое использование на ПК)
+
 all_in_one_lite.bat - скрипт для последующей настройки, например после обновления Windows (второе использование и далее)
+
 all_in_one_free.bat - скрипт можно нажимать когда угодно
 
 1. Сначала используйте *.bat (от Администратора)
