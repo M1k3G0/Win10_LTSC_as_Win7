@@ -37,6 +37,8 @@ all_in_one_free.bat - script can run anytime
 
 4. PC Reboot.
 
+5. Say thanks, PayPal: mirageat@gmail.com
+
 
 
 =======> Win10_LTSC_as_Win7 FAQ (RUS):
@@ -77,3 +79,5 @@ all_in_one_free.bat - скрипт можно нажимать когда уго
 "restore_win_photoviewer_classic.reg" - установка Windows PhotoViewer Classic (если хотите)
 
 4. Перезагрузите ПК.
+
+5. Выразите благодарность, PayPal: mirageat@gmail.com
