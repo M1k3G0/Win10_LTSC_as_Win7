@@ -1,12 +1,17 @@
-=======> Windows 10 LTSC 1809 FAQ (ENG):
+=======> Win10_LTSC_as_Win7 FAQ (ENG):
 
 In addition to utilities:
 
 10AppsManager - free portable Preinstalled Apps Uninstaller ( thewindowsclub.com/10appsmanager-windows-10 )
+
 Windows Privacy Dashboard (WPD) - free portable Antispy Tool ( wpd.app )
+
 OOSU10 - free portable Antispy Tool ( oo-software.com/en/shutup10 )
+
 Wise Game Booster - free Optimazer ( wisecleaner.com/wise-game-booster.html )
+
 MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysinternals/downloads/autoruns )
+
 FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
 This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your own Antivirus. The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities.
@@ -28,15 +33,20 @@ all_in_one_free.bat - script can run anytime
 
 
 
-=======> Windows 10 LTSC 1809 FAQ (RUS):
+=======> Win10_LTSC_as_Win7 FAQ (RUS):
 
 В дополнение к утилитам:
 
 10AppsManager - free portable Preinstalled Apps Uninstaller ( thewindowsclub.com/10appsmanager-windows-10 )
+
 Windows Privacy Dashboard (WPD) - free portable Antispy Tool ( wpd.app )
+
 OOSU10 - free portable Antispy Tool ( oo-software.com/en/shutup10 )
+
 Wise Game Booster - free Optimazer ( wisecleaner.com/wise-game-booster.html )
+
 MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysinternals/downloads/autoruns )
+
 FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
 Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус. Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. 
