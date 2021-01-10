@@ -24,13 +24,15 @@ all_in_one_free.bat - script can run anytime
 
 1. First use * .bat (as Administrator)
 2. And then the specified utilities (to make sure everything is turned off and optimized)
-3. run one of the following scripts:
+3. Run one of the following scripts:
+
 "Meltdown.txt" - protection FAQ
 - 3a   "Meltdown_old.bat" - old Protection script, suitable for everyone
 - 3b   "Meltdown_new_ht_off.bat" - new Protection script (CPU Hyper-Threading OFF)
 - 3c   "Meltdown_new_ht_on.bat" - new Protection script (CPU Hyper-Threading ON)
 "InSpectre.exe" - protection test ( grc.com/inspectre.htm )
 "restore_win_photoviewer_classic.reg" - manual installation Windows PhotoViewer Classic (if you want)
+
 4. PC Reboot.
 
 
@@ -62,10 +64,12 @@ all_in_one_free.bat - скрипт можно нажимать когда уго
 1. Сначала используйте *.bat (от Администратора)
 2. А потом указанные утилиты (чтобы убедиться, что все выключено и оптимизировано)
 3. Запустите один из следующих скриптов:
+
 "Meltdown.txt" - FAQ по защите
 - 3a   "Meltdown_old.bat" - старая весрия скрипта, подходит для всех
 - 3b   "Meltdown_new_ht_off.bat" - новая версия (CPU Hyper-Threading OFF)
 - 3c   "Meltdown_new_ht_on.bat" - новая версия (CPU Hyper-Threading ON)
 "InSpectre.exe" - тест защиты ( grc.com/inspectre.htm )
 "restore_win_photoviewer_classic.reg" - установка Windows PhotoViewer Classic (если хотите)
+
 4. Перезагрузите ПК.
