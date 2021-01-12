@@ -1,4 +1,4 @@
-=======> Win10_LTSC_as_Win7 FAQ (ENG):
+=======> Windows 10 LTSC as Windows 7 (ENG FAQ):
 
 In addition to utilities:
 
@@ -41,7 +41,7 @@ all_in_one_free.bat - script can run anytime
 
 
 
-=======> Win10_LTSC_as_Win7 FAQ (RUS):
+=======> Windows 10 LTSC как Windows 7 (RU FAQ):
 
 В дополнение к утилитам:
 
