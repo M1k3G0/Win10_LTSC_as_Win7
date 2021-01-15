@@ -14,7 +14,7 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
-This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your own Antivirus. The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities.
+This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your own Antivirus. The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities. Apply only after permanent activation!
 
 all_in_one_first.bat - script for initial setup after Windows installation (first use on a PC)
 
@@ -57,7 +57,7 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
-Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус. Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. 
+Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус. Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. Применять только после постоянной активации!
 
 all_in_one_first.bat - скрипт для первоначальной настройки после установки Windows (первое использование на ПК)
 
