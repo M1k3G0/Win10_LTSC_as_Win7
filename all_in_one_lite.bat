@@ -721,7 +721,6 @@ copy /b NUL %windir%\HelpPane.exe
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\storahci\Parameters\Device" /v "TreatAsInternalPort" /t REG_MULTI_SZ /d "0\01\02\03\04\05\06\07" /f
 %windir%\System32\reg.exe add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\storahci /v DisableRemovable /t REG_DWORD /d "1" /f
 %windir%\System32\reg.exe add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\asstahci64 /v DisableRemovable /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoDrives /t REG_DWORD /d 131072 /f
 %windir%\System32\reg.exe delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\DelegateFolders /f
 %windir%\System32\reg.exe add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\DelegateFolders /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "ArpRetryCount" /t REG_DWORD /d "0" /f
