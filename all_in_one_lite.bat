@@ -1,5 +1,4 @@
 %windir%\System32\cacls.exe C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl /d SYSTEM
-%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:SMB1Protocol
 ren %windir%\System32\CompatTelRunner.exe_ CompatTelRunner.exe__
 %windir%\System32\taskkill.exe /F /IM CompatTelRunner.exe
 %windir%\System32\takeown.exe /F %windir%\System32\CompatTelRunner.exe /A
