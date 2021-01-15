@@ -1,5 +1,9 @@
 %windir%\System32\cacls.exe C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl /d SYSTEM
 %windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:SMB1Protocol
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:TelnetClient
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Internet-Explorer-Optional-amd64
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Internet-Explorer-Optional-x86
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:MediaCenter
 %windir%\System32\bcdedit.exe /set {default} bootmenupolicy legacy
 %windir%\System32\bcdedit.exe /set {bootmgr} displaybootmenu yes
 %windir%\System32\bcdedit.exe /timeout 3
