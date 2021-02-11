@@ -7,9 +7,15 @@
 %windir%\System32\bcdedit.exe /set {default} bootmenupolicy legacy
 %windir%\System32\bcdedit.exe /set {bootmgr} displaybootmenu yes
 %windir%\System32\bcdedit.exe /timeout 3
-setx GPU_MAX_ALLOC_PERCENT 99
-setx GPU_SINGLE_ALLOC_PERCENT 90
-setx CPU_MAX_ALLOC_PERCENT 99
+%windir%\System32\setx.exe GPU_MAX_ALLOC_PERCENT 99
+%windir%\System32\setx.exe GPU_SINGLE_ALLOC_PERCENT 90
+%windir%\System32\setx.exe CPU_MAX_ALLOC_PERCENT 99
+%windir%\System32\netsh.exe advfirewall firewall delete rule all
+%windir%\System32\netsh.exe advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
 %windir%\System32\reg.exe delete "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 %windir%\System32\reg.exe delete "HKEY_LOCAL_MACHINE\System\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
