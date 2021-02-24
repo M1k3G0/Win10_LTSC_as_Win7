@@ -10,18 +10,26 @@
 %windir%\System32\setx.exe GPU_MAX_ALLOC_PERCENT 99
 %windir%\System32\setx.exe GPU_SINGLE_ALLOC_PERCENT 90
 %windir%\System32\setx.exe CPU_MAX_ALLOC_PERCENT 99
-%windir%\System32\netsh.exe advfirewall firewall delete rule all
-%windir%\System32\netsh.exe advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
 %windir%\System32\reg.exe delete "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 %windir%\System32\reg.exe delete "HKEY_LOCAL_MACHINE\System\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\ControlSet001\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 %windir%\System32\reg.exe delete "HKEY_LOCAL_MACHINE\System\ControlSet002\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\ControlSet002\Services\SharedAccess\Parameters\FirewallPolicy\FirewallRules" /f
+%windir%\System32\netsh.exe advfirewall firewall delete rule all
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile" /v "DoNotAllowExceptions" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile" /v "DoNotAllowExceptions" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile" /v "DoNotAllowExceptions" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PrivateProfile" /v "DoNotAllowExceptions" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile" /v "DefaultOutboundAction" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile" /v "DefaultOutboundAction" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile" /v "DefaultOutboundAction" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PrivateProfile" /v "DefaultOutboundAction" /t REG_DWORD /d "1" /f
+%windir%\System32\netsh.exe advfirewall set allprofiles firewallpolicy blockinbound,blockoutbound
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\StandardProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\DomainProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PublicProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsFirewall\PrivateProfile" /v "DisableUnicastResponsesToMulticastBroadcast" /t REG_DWORD /d "1" /f
 ren %UserProfile%\AppData\Local\Microsoft\Windows\Shell\DefaultLayouts.xml --DefaultLayouts.---
 ren C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\DefaultLayouts.xml --DefaultLayouts.---
 %windir%\System32\taskkill.exe /F /IM CompatTelRunner.exe
@@ -1165,12 +1173,6 @@ copy /b NUL %windir%\HelpPane.exe
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\Software\Microsoft\PCHealth\ErrorReporting" /v "DoReport" /t REG_DWORD /d "0" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\Software\Microsoft\PCHealth\ErrorReporting" /v "ShowUI" /t REG_DWORD /d "0" /f
 %windir%\System32\reg.exe add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search\Flighting" /v "CachedFeatureString" /t REG_SZ /d "" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile" /v "DoNotAllowExceptions" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile" /v "DoNotAllowExceptions" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile" /v "DoNotAllowExceptions" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\DomainProfile" /v "DefaultOutboundAction" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\PublicProfile" /v "DefaultOutboundAction" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy\StandardProfile" /v "DefaultOutboundAction" /t REG_DWORD /d "1" /f
 %windir%\System32\fsutil.exe behavior set DisableDeleteNotify 0
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management" /v "PagingFiles" /t REG_BINARY /d 00000000 /f
 %windir%\System32\reg.exe add "HKEY_CURRENT_USER\Control Panel\Infrared\Global" /v "ShowTrayIcon" /t REG_BINARY /d 00 /f
