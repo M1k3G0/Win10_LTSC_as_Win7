@@ -30,14 +30,13 @@ all_in_one_free.bat - script can run anytime
 - 3a   "Meltdown_old.bat" - old Protection script, suitable for everyone
 - 3b   "Meltdown_new_ht_off.bat" - new Protection script (CPU Hyper-Threading OFF)
 - 3c   "Meltdown_new_ht_on.bat" - new Protection script (CPU Hyper-Threading ON)
-
 "InSpectre.exe" - protection test ( grc.com/inspectre.htm )
 
-"restore_win_photoviewer_classic.reg" - manual installation Windows PhotoViewer Classic (if you want)
+4. "restore_win_photoviewer_classic.reg" - manual installation Windows PhotoViewer Classic (if you want)
 
-4. PC Reboot.
+5. PC Reboot.
 
-5. Say thanks, PayPal: mirageat@gmail.com
+6. Say thanks, PayPal: mirageat@gmail.com
 
 
 
@@ -57,7 +56,7 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
-Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус (или Антивирус + Файрвол. Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. Применять только после постоянной активации Windows!
+Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус (или Антивирус + Файрвол). Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. Применять только после постоянной активации Windows!
 
 all_in_one_first.bat - скрипт для первоначальной настройки после установки Windows (первое использование на ПК)
 
@@ -73,11 +72,10 @@ all_in_one_free.bat - скрипт можно нажимать когда уго
 - 3a   "Meltdown_old.bat" - старая весрия скрипта, подходит для всех
 - 3b   "Meltdown_new_ht_off.bat" - новая версия (CPU Hyper-Threading OFF)
 - 3c   "Meltdown_new_ht_on.bat" - новая версия (CPU Hyper-Threading ON)
-
 "InSpectre.exe" - тест защиты ( grc.com/inspectre.htm )
 
-"restore_win_photoviewer_classic.reg" - установка Windows PhotoViewer Classic (если хотите)
+4. "restore_win_photoviewer_classic.reg" - установка Windows PhotoViewer Classic (если хотите)
 
-4. Перезагрузите ПК.
+5. Перезагрузите ПК.
 
-5. Выразите благодарность, PayPal: mirageat@gmail.com
+6. Выразите благодарность, PayPal: mirageat@gmail.com
