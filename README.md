@@ -14,7 +14,7 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
-This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your custom Antivirus (or Antivirus + Firewall). The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities. All connections in Windows Firewall are blocked, you enter allowed applications himself (if you are advanced user) or install TinyWall (tinywall.pados.hu). 
+This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your custom Antivirus (or Antivirus + Firewall). The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities. All connections in Windows Firewall are blocked, you enter allowed applications himself (if you are advanced user) or install TinyWall ( tinywall.pados.hu ). 
 
 Apply only after permanent Windows activation!
 
@@ -59,7 +59,7 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
-Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус (или Антивирус + Файрвол). Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. Все соединения в Брандмауэре Windows блокируются, вы должны внести разрешенные самостоятельно (если вы продвинутый пользователь) или установите TinyWall (tinywall.pados.hu).
+Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус (или Антивирус + Файрвол). Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. Все соединения в Брандмауэре Windows блокируются, вы должны внести разрешенные самостоятельно (если вы продвинутый пользователь) или установите TinyWall ( tinywall.pados.hu ).
 
 Применять только после постоянной активации Windows!
 
