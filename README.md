@@ -18,9 +18,9 @@ This script can be used by organizations for workplaces setups. Disables unneces
 
 Apply only after permanent Windows activation!
 
-all_in_one_first.bat - script for initial setup after Windows installation (first use on a PC)
+all_in_one_first.bat - script after Windows Installation (first use on a PC)
 
-all_in_one_lite.bat - script for subsequent configuration, for example after Win Updating (second use +)
+all_in_one_lite.bat - script after Windows Updates (second use +)
 
 all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 version
 
@@ -63,9 +63,9 @@ FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
 
 Применять только после постоянной активации Windows!
 
-all_in_one_first.bat - скрипт для первоначальной настройки после установки Windows (первое использование на ПК)
+all_in_one_first.bat - скрипт после установки Windows (первое использование на ПК)
 
-all_in_one_lite.bat - скрипт для последующей настройки, например после обновления Windows (второе использование и далее)
+all_in_one_lite.bat - скрипт после обновлений Windows (второе использование и далее)
 
 all_in_one_free.bat - скрипт можно нажимать когда угодно, также подходит для версии LTSB 1607
 
