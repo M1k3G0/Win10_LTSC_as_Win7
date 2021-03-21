@@ -12,9 +12,7 @@ Wise Game Booster - free Optimazer ( wisecleaner.com/wise-game-booster.html )
 
 MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysinternals/downloads/autoruns )
 
-FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
-
-This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your custom Antivirus (or Antivirus + Firewall). The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities. All connections in Windows Firewall are blocked, you enter allowed applications himself (if you are advanced user) or install TinyWall ( tinywall.pados.hu ). 
+This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your custom Antivirus (or Antivirus + Firewall). The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities.
 
 Apply only after permanent Windows activation!
 
@@ -35,11 +33,15 @@ all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 versio
 
 "InSpectre.exe" - protection test ( grc.com/inspectre.htm )
 
-4. "restore_win_photoviewer_classic.reg" - manual installation Windows PhotoViewer Classic (if you want)
+4. "restore_win_photoviewer_classic.reg" - (if you want) - manual installation Windows PhotoViewer Classic
 
-5. PC Reboot.
+5. firewall.bat - (if you want) - all connections in Windows Firewall are blocked, all rules are deleted, you must enter allowed applications himself by installing Windows Firewall Control (binisoft.org/wfc) or another analog. Download it in advance.
 
-6. Say thanks, PayPal: mirageat@gmail.com
+free portable FireWall test app ( 2ip.ru/firewalltest )
+
+6. PC Reboot.
+
+7. Say thanks, PayPal: mirageat@gmail.com
 
 
 
@@ -57,9 +59,7 @@ Wise Game Booster - free Optimazer ( wisecleaner.com/wise-game-booster.html )
 
 MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysinternals/downloads/autoruns )
 
-FireWallTest - free portable FireWall test ( 2ip.ru/firewalltest )
-
-Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус (или Антивирус + Файрвол). Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. Все соединения в Брандмауэре Windows блокируются, вы должны внести разрешенные приложения самостоятельно (если вы продвинутый пользователь) или установите TinyWall ( tinywall.pados.hu ).
+Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус (или Антивирус + Файрвол). Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. 
 
 Применять только после постоянной активации Windows!
 
@@ -80,8 +80,12 @@ all_in_one_free.bat - скрипт можно нажимать когда уго
 
 "InSpectre.exe" - тест защиты ( grc.com/inspectre.htm )
 
-4. "restore_win_photoviewer_classic.reg" - установка Windows PhotoViewer Classic (если хотите)
+4. "restore_win_photoviewer_classic.reg" - (по желанию) - установка Windows PhotoViewer Classic
 
-5. Перезагрузите ПК.
+5. firewall.bat - (по желанию) - все соединения в Брандмауэре Windows блокируются, все правила удаляются, вы должны внести разрешенные приложения самостоятельно установив Windows Firewall Control ( binisoft.org/wfc ) или его аналог. Скачайте его заранее.
 
-6. Выразите благодарность, PayPal: mirageat@gmail.com
+free portable FireWall test app ( 2ip.ru/firewalltest )
+
+6. Перезагрузите ПК.
+
+7. Выразите благодарность, PayPal: mirageat@gmail.com
