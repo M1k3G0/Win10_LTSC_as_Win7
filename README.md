@@ -35,7 +35,7 @@ all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 versio
 
 4. "restore_win_photoviewer_classic.reg" - (if you want) - manual installation Windows PhotoViewer Classic
 
-5. firewall.bat - (if you want) - all connections in Windows Firewall are blocked, all rules are deleted, you must enter allowed applications himself by installing Windows Firewall Control (binisoft.org/wfc) or another analog. Download it in advance.
+5. firewall.bat - (if you want) - all connections in Windows Firewall are blocked, all rules are deleted, you must enter allowed applications himself by installing Windows Firewall Control ( binisoft.org/wfc ) or another analog. Download it in advance.
 
 free portable FireWall test app ( 2ip.ru/firewalltest )
 
