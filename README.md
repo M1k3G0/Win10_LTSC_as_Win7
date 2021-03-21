@@ -31,7 +31,7 @@ all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 versio
 - 3b   "Meltdown_new_ht_off.bat" - new Protection script (CPU Hyper-Threading OFF)
 - 3c   "Meltdown_new_ht_on.bat" - new Protection script (CPU Hyper-Threading ON)
 
-"InSpectre.exe" - protection test ( grc.com/inspectre.htm )
+"InSpectre.exe" - protection test after reboot ( grc.com/inspectre.htm )
 
 4. "restore_win_photoviewer_classic.reg" - (if you want) - manual installation Windows PhotoViewer Classic
 
@@ -78,7 +78,7 @@ all_in_one_free.bat - скрипт можно нажимать когда уго
 - 3b   "Meltdown_new_ht_off.bat" - новая версия (CPU Hyper-Threading OFF)
 - 3c   "Meltdown_new_ht_on.bat" - новая версия (CPU Hyper-Threading ON)
 
-"InSpectre.exe" - тест защиты ( grc.com/inspectre.htm )
+"InSpectre.exe" - тест защиты после перезагрузки ( grc.com/inspectre.htm )
 
 4. "restore_win_photoviewer_classic.reg" - (по желанию) - установка Windows PhotoViewer Classic
 
