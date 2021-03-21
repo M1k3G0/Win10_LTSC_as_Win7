@@ -38,6 +38,7 @@ all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 versio
 5. firewall.bat - (if you want) - all connections in Windows Firewall are blocked, all rules are deleted, you must enter allowed applications himself by installing Windows Firewall Control ( binisoft.org/wfc ) or another analog. Download it in advance.
 
 free portable FireWall test app ( 2ip.ru/firewalltest )
+
 one more FireWall online  test ( grc.com/shieldsup )
 
 6. PC Reboot.
@@ -86,6 +87,7 @@ all_in_one_free.bat - скрипт можно нажимать когда уго
 5. firewall.bat - (по желанию) - все соединения в Брандмауэре Windows блокируются, все правила удаляются, вы должны внести разрешенные приложения самостоятельно установив Windows Firewall Control ( binisoft.org/wfc ) или его аналог. Скачайте его заранее.
 
 free portable FireWall test app ( 2ip.ru/firewalltest )
+
 one more FireWall online  test ( grc.com/shieldsup )
 
 6. Перезагрузите ПК.
