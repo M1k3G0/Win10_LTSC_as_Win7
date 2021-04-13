@@ -12,7 +12,7 @@ Wise Game Booster - free Optimazer ( wisecleaner.com/wise-game-booster.html )
 
 MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysinternals/downloads/autoruns )
 
-This script can be used by organizations for workplaces setups. Disables unnecessary functions.  You must use an SSD and your custom Antivirus (or Antivirus + Firewall). The paging file is deleted. Auto-updates are disabled becouse I install them manually, but you can control this with specified utilities.
+This script can be used for workplaces setups. Disables unnecessary functions.  You must use an SSD and your custom Antivirus. The paging file is deleted. Auto-updates are disabled (becouse I install them manually, but you can control this with specified utilities).
 
 Apply only after permanent Windows activation!
 
@@ -61,7 +61,7 @@ Wise Game Booster - free Optimazer ( wisecleaner.com/wise-game-booster.html )
 
 MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysinternals/downloads/autoruns )
 
-Этот скрипт может быть использован организациями для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус (или Антивирус + Файрвол). Файл подкачки удаляется. Авто-обновления отключаются, так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит. 
+Этот скрипт может быть использован для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус. Файл подкачки удаляется. Авто-обновления отключаются (так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит). 
 
 Применять только после постоянной активации Windows!
 
