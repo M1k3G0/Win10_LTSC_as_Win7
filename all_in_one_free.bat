@@ -1294,4 +1294,5 @@
 %windir%\System32\sc.exe config WinHttpAutoProxySvc start= disabled
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\WindowsPowerShell\v1.0\PowerShell.exe -ExecutionPolicy ByPass -NoProfile -command "Get-ChildItem 'HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces' |foreach { Set-ItemProperty -Path HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces\$($_.pschildname) -Name NetbiosOptions -Value 2 -Verbose}"
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage" /v "1252" /t REG_SZ /d "c_1251.nls" /f
 pause
