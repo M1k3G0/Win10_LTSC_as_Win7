@@ -1324,7 +1324,4 @@ copy /b NUL %windir%\HelpPane.exe
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\WindowsPowerShell\v1.0\PowerShell.exe -ExecutionPolicy ByPass -NoProfile -command "Get-ChildItem 'HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces' |foreach { Set-ItemProperty -Path HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces\$($_.pschildname) -Name NetbiosOptions -Value 2 -Verbose}"
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage" /v "1252" /t REG_SZ /d "c_1251.nls" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters" /v "Type" /t REG_SZ /d "NTP" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\W32time\TimeProviders\NtpClient" /v "Enabled" /t REG_DWORD /d "1" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time" /v "Start" /t REG_DWORD /d "3" /f
 pause
