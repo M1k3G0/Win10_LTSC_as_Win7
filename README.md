@@ -16,9 +16,7 @@ This script can be used for workplaces setups. Disables unnecessary functions.  
 
 Apply only after permanent Windows activation!
 
-all_in_one_first.bat - script after Windows Installation (first use on a PC)
-
-all_in_one_lite.bat - script after Windows Updates (second use +)
+all_in_one_first.bat - script after Windows Installation (first use on a PC) or after Windows Updates (second use +)...
 
 all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 version
 
@@ -65,9 +63,7 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 Применять только после постоянной активации Windows!
 
-all_in_one_first.bat - скрипт после установки Windows (первое использование на ПК)
-
-all_in_one_lite.bat - скрипт после обновлений Windows (второе использование и далее)
+all_in_one_first.bat - скрипт после установки Windows (первое использование на ПК) или после обновлений Windows...
 
 all_in_one_free.bat - скрипт можно нажимать когда угодно, также подходит для версии LTSB 1607
 
