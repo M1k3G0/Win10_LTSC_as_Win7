@@ -16,26 +16,31 @@ ren C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\DefaultLayouts.xml --
 %windir%\System32\takeown.exe /F %windir%\System32\CompatTelRunner.exe /A
 %windir%\System32\icacls.exe %windir%\System32\CompatTelRunner.exe /grant[:r] %Username%:(F)
 ren %windir%\System32\CompatTelRunner.exe CompatTelRunner.exe_
+%windir%\System32\icacls.exe %windir%\System32\CompatTelRunner.exe_ /remove[:g] %Username%
 copy /b NUL %windir%\System32\CompatTelRunner.exe
 %windir%\System32\taskkill.exe /F /IM upfc.exe
 %windir%\System32\takeown.exe /F %windir%\System32\upfc.exe /A
 %windir%\System32\icacls.exe %windir%\System32\upfc.exe /grant[:r] %Username%:(F)
 ren %windir%\System32\upfc.exe upfc.exe_
+%windir%\System32\icacls.exe %windir%\System32\upfc.exe_ /remove[:g] %Username%
 copy /b NUL %windir%\System32\upfc.exe
 %windir%\System32\taskkill.exe /F /IM GameBarPresenceWriter.exe
 %windir%\System32\takeown.exe /F %windir%\System32\GameBarPresenceWriter.exe /A
 %windir%\System32\icacls.exe %windir%\System32\GameBarPresenceWriter.exe /grant[:r] %Username%:(F)
 ren %windir%\System32\GameBarPresenceWriter.exe GameBarPresenceWriter.exe_
+%windir%\System32\icacls.exe %windir%\System32\GameBarPresenceWriter.exe_ /remove[:g] %Username%
 copy /b NUL %windir%\System32\GameBarPresenceWriter.exe
 %windir%\System32\taskkill.exe /F /IM GamePanel.exe
 %windir%\System32\takeown.exe /F %windir%\System32\GamePanel.exe /A
 %windir%\System32\icacls.exe %windir%\System32\GamePanel.exe /grant[:r] %Username%:(F)
 ren %windir%\System32\GamePanel.exe GamePanel.exe_
+%windir%\System32\icacls.exe %windir%\System32\GamePanel.exe_ /remove[:g] %Username%
 copy /b NUL %windir%\System32\GamePanel.exe
 %windir%\System32\taskkill.exe /F /IM HelpPane.exe
 %windir%\System32\takeown.exe /F %windir%\HelpPane.exe /A
 %windir%\System32\icacls.exe %windir%\HelpPane.exe /grant[:r] %Username%:(F)
 ren %windir%\HelpPane.exe HelpPane.exe_
+%windir%\System32\icacls.exe %windir%\HelpPane.exe_ /remove[:g] %Username%
 copy /b NUL %windir%\HelpPane.exe
 %windir%\System32\sc.exe stop DiagTrack
 %windir%\System32\sc.exe stop diagnosticshub.standardcollector.service
@@ -1332,4 +1337,6 @@ copy /b NUL %windir%\HelpPane.exe
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\WindowsPowerShell\v1.0\PowerShell.exe -ExecutionPolicy ByPass -NoProfile -command "Get-ChildItem 'HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces' |foreach { Set-ItemProperty -Path HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces\$($_.pschildname) -Name NetbiosOptions -Value 2 -Verbose}"
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage" /v "1252" /t REG_SZ /d "c_1251.nls" /f
+%windir%\System32\reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" /v "GameDVR_Enabled" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v "ASPNET" /t REG_DWORD /d "0" /f
 pause
