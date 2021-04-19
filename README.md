@@ -16,7 +16,7 @@ This script can be used for workplaces setups. Disables unnecessary functions.  
 
 Apply only after permanent Windows activation!
 
-all_in_one_first.bat - script after Windows Installation (first use on a PC) or after Windows Updates (second use +)...
+all_in_one_first.bat - script after Windows Installation (first use on a PC) or after Windows Updates...
 
 all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 version
 
