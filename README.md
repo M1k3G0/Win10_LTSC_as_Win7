@@ -1,5 +1,7 @@
 =======> Windows 10 LTSC as Windows 7 (ENG FAQ):
 
+At the test stage , use only if it's suitable for you (make sure by VM)...
+
 In addition to utilities:
 
 10AppsManager - free portable Preinstalled Apps Uninstaller ( thewindowsclub.com/10appsmanager-windows-10 )
@@ -46,6 +48,8 @@ one more FireWall online test after reboot ( grc.com/shieldsup )
 
 
 =======> Windows 10 LTSC как Windows 7 (RU FAQ):
+
+Это находится на этапе тестирования, используете только если вам это подходит (убедившись в этом через VM)...
 
 В дополнение к утилитам:
 
