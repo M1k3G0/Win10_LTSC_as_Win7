@@ -42,6 +42,46 @@ copy /b NUL %windir%\System32\GamePanel.exe
 ren %windir%\HelpPane.exe HelpPane.exe_
 %windir%\System32\icacls.exe %windir%\HelpPane.exe_ /remove[:g] %Username%
 copy /b NUL %windir%\HelpPane.exe
+%windir%\System32\takeown.exe /F "C:\Program Files\internet explorer\ieinstal.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\ieinstal.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files\internet explorer\ieinstal.exe" ieinstal.exe_
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\ieinstal.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files\internet explorer\ieinstal.exe"
+%windir%\System32\takeown.exe /F "C:\Program Files\internet explorer\ielowutil.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\ielowutil.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files\internet explorer\ielowutil.exe" ielowutil.exe_
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\ielowutil.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files\internet explorer\ielowutil.exe"
+%windir%\System32\takeown.exe /F "C:\Program Files\internet explorer\ExtExport.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\ExtExport.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files\internet explorer\ExtExport.exe" ExtExport.exe_
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\ExtExport.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files\internet explorer\ExtExport.exe"
+%windir%\System32\takeown.exe /F "C:\Program Files (x86)\Internet Explorer\ieinstal.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files (x86)\Internet Explorer\ieinstal.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files (x86)\Internet Explorer\ieinstal.exe" ieinstal.exe_
+%windir%\System32\icacls.exe "C:\Program Files (x86)\Internet Explorer\ieinstal.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files (x86)\Internet Explorer\ieinstal.exe"
+%windir%\System32\takeown.exe /F "C:\Program Files (x86)\Internet Explorer\ielowutil.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files (x86)\Internet Explorer\ielowutil.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files (x86)\Internet Explorer\ielowutil.exe" ielowutil.exe_
+%windir%\System32\icacls.exe "C:\Program Files (x86)\Internet Explorer\ielowutil.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files (x86)\Internet Explorer\ielowutil.exe"
+%windir%\System32\takeown.exe /F "C:\Program Files (x86)\internet explorer\ExtExport.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files (x86)\internet explorer\ExtExport.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files (x86)\internet explorer\ExtExport.exe" ExtExport.exe_
+%windir%\System32\icacls.exe "C:\Program Files (x86)\internet explorer\ExtExport.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files (x86)\internet explorer\ExtExport.exe"
+%windir%\System32\takeown.exe /F "C:\Program Files\internet explorer\iediagcmd.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\iediagcmd.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files\internet explorer\iediagcmd.exe" iediagcmd.exe_
+%windir%\System32\icacls.exe "C:\Program Files\internet explorer\iediagcmd.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files\internet explorer\iediagcmd.exe"
+%windir%\System32\takeown.exe /F "C:\Program Files (x86)\internet explorer\iediagcmd.exe" /A
+%windir%\System32\icacls.exe "C:\Program Files (x86)\internet explorer\iediagcmd.exe" /grant[:r] %Username%:(F)
+ren "C:\Program Files (x86)\internet explorer\iediagcmd.exe" iediagcmd.exe_
+%windir%\System32\icacls.exe "C:\Program Files (x86)\internet explorer\iediagcmd.exe_" /remove[:g] %Username%
+copy /b NUL "C:\Program Files (x86)\internet explorer\iediagcmd.exe"
 %windir%\System32\sc.exe stop DiagTrack
 %windir%\System32\sc.exe stop diagnosticshub.standardcollector.service
 %windir%\System32\sc.exe stop dmwappushservice
