@@ -1295,4 +1295,8 @@
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Nls\CodePage" /v "1252" /t REG_SZ /d "c_1251.nls" /f
 %windir%\System32\reg.exe add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\GameDVR" /v "GameDVR_Enabled" /t REG_DWORD /d "0" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList" /v "ASPNET" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters" /v "IGMPLevel" /t REG_DWORD /d "0" /f
+%windir%\System32\WindowsPowerShell\v1.0\PowerShell.exe -ExecutionPolicy ByPass -NoProfile -command "Get-ChildItem 'HKLM:SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces' |foreach { Set-ItemProperty -Path HKLM:SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\$($_.pschildname) -Name IGMPLevel -Value 0 -Verbose}"
+%windir%\System32\netsh.exe advfirewall firewall>set multicastbroadcastresponse disable
+%windir%\System32\netsh.exe advfirewall firewall>set multicastbroadcastresponse mode=disable profile=all
 pause
