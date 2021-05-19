@@ -16,13 +16,13 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 This script can be used for workplaces setups. Disables unnecessary functions.  You must use an SSD and your custom Antivirus. The paging file is deleted. Auto-updates are disabled (becouse I install them manually, but you can control this with specified utilities).
 
-Apply only after permanent Windows activation!
+Apply only after Windows activation!
 
 all_in_one_first.bat - script after Windows Installation (first use on a PC) or after Windows Updates...
 
 all_in_one_free.bat - script can run anytime, also suitable for LTSB 1607 version
 
-1. First use * .bat (as Administrator)
+1. First use 2 * .bat (as Administrator)
 2. And then the specified utilities (to make sure everything is turned off and optimized)
 3. Run one of the following scripts:
 
@@ -65,13 +65,13 @@ MS Autoruns - free portable Autorun Optimazer - ( docs.microsoft.com/en-us/sysin
 
 Этот скрипт может быть использован для первоначальной настройки рабочих мест. Отключает ненужные функции. Вы должны использовать SSD и собственный Антивирус. Файл подкачки удаляется. Авто-обновления отключаются (так как я устанавливаю их вручную, но вы можете это контроллировать с помощью описанных утилит). 
 
-Применять только после постоянной активации Windows!
+Применять только после активации Windows!
 
 all_in_one_first.bat - скрипт после установки Windows (первое использование на ПК) или после обновлений Windows...
 
 all_in_one_free.bat - скрипт можно нажимать когда угодно, также подходит для версии LTSB 1607
 
-1. Сначала используйте *.bat (от Администратора)
+1. Сначала используйте 2 *.bat (от Администратора)
 2. А потом указанные утилиты (чтобы убедиться, что все выключено и оптимизировано)
 3. Запустите один из следующих скриптов:
 
