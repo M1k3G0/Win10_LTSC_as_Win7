@@ -4,6 +4,20 @@
 %windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Internet-Explorer-Optional-amd64
 %windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Internet-Explorer-Optional-x86
 %windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:MediaCenter
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:SmbDirect
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:WindowsMediaPlayer
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:MediaPlayback
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:WCF-TCP-PortSharing45
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:WCF-Services45
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Printing-Foundation-InternetPrinting-Client
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Windows-Identity-Foundation
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:FaxServicesClientPackage
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Printing-Foundation-Features
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:WorkFolders-Client
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:MSRDC-Infrastructure
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:SearchEngine-Client-Package
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:Printing-XPSServices-Features
+%windir%\System32\dism.exe /online /norestart /Disable-feature /featurename:NetFx4-AdvSrvs
 %windir%\System32\bcdedit.exe /set {default} bootmenupolicy legacy
 %windir%\System32\bcdedit.exe /set {bootmgr} displaybootmenu yes
 %windir%\System32\bcdedit.exe /timeout 3
