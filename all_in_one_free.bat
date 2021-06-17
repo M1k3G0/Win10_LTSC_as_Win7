@@ -1299,4 +1299,8 @@
 %windir%\System32\WindowsPowerShell\v1.0\PowerShell.exe -ExecutionPolicy ByPass -NoProfile -command "Get-ChildItem 'HKLM:SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces' |foreach { Set-ItemProperty -Path HKLM:SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces\$($_.pschildname) -Name IGMPLevel -Value 0 -Verbose}"
 %windir%\System32\netsh.exe advfirewall firewall>set multicastbroadcastresponse disable
 %windir%\System32\netsh.exe advfirewall firewall>set multicastbroadcastresponse mode=disable profile=all
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting" /v "Enabled" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb10" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb20" /v "Start" /t REG_DWORD /d "4" /f
 pause
