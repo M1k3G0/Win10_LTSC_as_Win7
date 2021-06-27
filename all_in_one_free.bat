@@ -86,6 +86,31 @@
 %windir%\System32\sc.exe stop upnphost
 %windir%\System32\sc.exe stop BITS
 %windir%\System32\sc.exe stop wscsvc
+%windir%\System32\sc.exe stop RDSessMgr
+%windir%\System32\sc.exe stop WebClient
+%windir%\System32\sc.exe stop WZCSVC
+%windir%\System32\sc.exe stop WmiApSrv
+%windir%\System32\sc.exe stop seclogon
+%windir%\System32\sc.exe stop SysmonLog
+%windir%\System32\sc.exe stop SCardDrv
+%windir%\System32\sc.exe stop Netlogon
+%windir%\System32\sc.exe stop Messenger
+%windir%\System32\sc.exe stop mnmsrvc
+%windir%\System32\sc.exe stop RSVP
+%windir%\System32\sc.exe stop TlntSvr
+%windir%\System32\sc.exe config TlntSvr start= disabled
+%windir%\System32\sc.exe config RSVP start= disabled
+%windir%\System32\sc.exe config mnmsrvc start= disabled
+%windir%\System32\sc.exe config Messenger start= disabled
+%windir%\System32\sc.exe config Netlogon start= disabled
+%windir%\System32\sc.exe config SCardDrv start= disabled
+%windir%\System32\sc.exe config RpcLocator start= disabled
+%windir%\System32\sc.exe config SysmonLog start= disabled
+%windir%\System32\sc.exe config seclogon start= demand
+%windir%\System32\sc.exe config WmiApSrv start= disabled
+%windir%\System32\sc.exe config WZCSVC start= disabled
+%windir%\System32\sc.exe config WebClient start= disabled
+%windir%\System32\sc.exe config RDSessMgr start= disabled
 %windir%\System32\sc.exe config DiagTrack start= disabled
 %windir%\System32\sc.exe config diagnosticshub.standardcollector.service start= disabled
 %windir%\System32\sc.exe config dmwappushservice start= disabled
@@ -99,7 +124,7 @@
 %windir%\System32\sc.exe config WerSvc start= disabled
 %windir%\System32\sc.exe config OneSyncSvc start= disabled
 %windir%\System32\sc.exe config MessagingService start= disabled
-%windir%\System32\sc.exe config TimeBrokerSvc start= disabled
+%windir%\System32\sc.exe config TimeBrokerSvc start= demand
 %windir%\System32\sc.exe config PimIndexMaintenanceSvc start= disabled
 %windir%\System32\sc.exe config DoSvc start= disabled
 %windir%\System32\sc.exe config iphlpsvc start= disabled
@@ -1303,4 +1328,84 @@
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb10" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb20" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "SMB1" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "SMB2" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "EnableSecuritySignature" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "Hidden" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation" /v "RestrictNullSessionAccess" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "AutoShareServer" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "RestrictNullSessAccess" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "EnableForcedLogoff" /t REG_DWORD /d "1" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters" /v "AutoShareWks" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxCmds" /t REG_DWORD /d "30" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxCollectionCount" /t REG_DWORD /d "32" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer\Parameters" /v "MaxThreads" /t REG_DWORD /d "30" /f
+%windir%\System32\reg.exe add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\GameDVR" /v "AppCatureEnabled" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_CURRENT_USER\Software\Microsoft\GameBar" /v "AutoGameModeEnabled" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\xbgm" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\sc.exe stop "Broadcast User Service"
+%windir%\System32\sc.exe config "Broadcast User Service" start= disabled
+%windir%\System32\sc.exe stop GameDVR
+%windir%\System32\sc.exe config GameDVR start= disabled
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsRuntime\ActivatableClassId\Windows.Gaming.GameBar.PresenceServer.Internal.PresenceWriter" /v "ActivationType" /t REG_DWORD /d "0" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RpcLocator" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TimeBrokerSvc" /v "Start" /t REG_DWORD /d "3" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\seclogon" /v "Start" /t REG_DWORD /d "3" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SSDPSRV" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UevAgentService" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AzureAttestService" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\MDM" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\AppVClient" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ose64" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\npggsvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ssh-agent" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\QWAVE" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\shpamsvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Te.Service" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VSStandardCollectorService140" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\XboxGipSvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tzautoupdate" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TokenBroker" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DusmSvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TrkWks" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\lmhosts" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\ShellHWDetection" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\UmRdpService" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BthAvctpSvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PushToInstall" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\stisvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SensrSvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetTcpPortSharing" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\bthserv" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WpnService" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DsSvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\InstallService" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\upnphost" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\BITS" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wscsvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RDSessMgr" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WebClient" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WZCSVC" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WmiApSrv" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SysmonLog" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SCardDrv" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Messenger" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\mnmsrvc" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\RSVP" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TlntSvr" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\sc.exe stop WdiSystemHost
+%windir%\System32\sc.exe stop WdiServiceHost
+%windir%\System32\sc.exe stop FontCache
+%windir%\System32\sc.exe stop camsvc
+%windir%\System32\sc.exe config WdiSystemHost start= disabled
+%windir%\System32\sc.exe config WdiServiceHost start= disabled
+%windir%\System32\sc.exe config FontCache start= disabled
+%windir%\System32\sc.exe config camsvc start= demand
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdiSystemHost" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdiServiceHost" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FontCache" /v "Start" /t REG_DWORD /d "4" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\camsvc" /v "Start" /t REG_DWORD /d "3" /f
 pause
