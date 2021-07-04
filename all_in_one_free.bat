@@ -98,6 +98,10 @@
 %windir%\System32\sc.exe stop mnmsrvc
 %windir%\System32\sc.exe stop RSVP
 %windir%\System32\sc.exe stop TlntSvr
+%windir%\System32\sc.exe stop IKEEXT
+%windir%\System32\sc.exe stop PolicyAgent
+%windir%\System32\sc.exe config PolicyAgent start= demand
+%windir%\System32\sc.exe config IKEEXT start= demand
 %windir%\System32\sc.exe config TlntSvr start= disabled
 %windir%\System32\sc.exe config RSVP start= disabled
 %windir%\System32\sc.exe config mnmsrvc start= disabled
@@ -1133,7 +1137,6 @@
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnableSuperfetch" /t REG_DWORD /d "0" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon" /v "AutoRestartShell" /t REG_DWORD /d "1" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" /v "EnablePrefetcher" /t REG_DWORD /d "0" /f
-%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer" /v "Max Cached Icons" /t REG_DWORD /d "4096" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\Software\Microsoft\PCHealth\ErrorReporting" /v "DoReport" /t REG_DWORD /d "0" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\Software\Microsoft\PCHealth\ErrorReporting" /v "ShowUI" /t REG_DWORD /d "0" /f
 %windir%\System32\reg.exe add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search\Flighting" /v "CachedFeatureString" /t REG_SZ /d "" /f
@@ -1408,4 +1411,6 @@
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\WdiServiceHost" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\FontCache" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\camsvc" /v "Start" /t REG_DWORD /d "3" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\IKEEXT" /v "Start" /t REG_DWORD /d "3" /f
+%windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\PolicyAgent" /v "Start" /t REG_DWORD /d "3" /f
 pause
