@@ -1568,3 +1568,9 @@
 %windir%\System32\sc.exe config wlpasvc start= disabled
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\wlpasvc" /v "Start" /t REG_DWORD /d "4" /f
 %windir%\System32\reg.exe add "HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WcmSvc\Local" /v "fMinimizeConnections" /t REG_DWORD /d "3" /f
+%windir%\System32\sc.exe stop ose64
+%windir%\System32\sc.exe config ose64 start= demand
+%windir%\System32\sc.exe stop GalaxyClientService
+%windir%\System32\sc.exe config GalaxyClientService start= demand
+%windir%\System32\sc.exe stop GalaxyCommunication
+%windir%\System32\sc.exe config GalaxyCommunication start= demand
