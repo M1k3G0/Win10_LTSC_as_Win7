@@ -1574,3 +1574,9 @@
 %windir%\System32\sc.exe config GalaxyClientService start= demand
 %windir%\System32\sc.exe stop GalaxyCommunication
 %windir%\System32\sc.exe config GalaxyCommunication start= demand
+%windir%\System32\sc.exe stop "Origin Client Service"
+%windir%\System32\sc.exe config "Origin Client Service" start= demand
+%windir%\System32\sc.exe stop "Origin Web Helper Service"
+%windir%\System32\sc.exe config "Origin Web Helper Service" start= demand
+%windir%\System32\sc.exe stop "Steam Client Service"
+%windir%\System32\sc.exe config "Steam Client Service" start= demand
