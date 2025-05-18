@@ -43,8 +43,6 @@ one more FireWall online test after reboot ( grc.com/shieldsup )
 
 6. PC Reboot.
 
-7. Say thanks, PayPal: mirageat@gmail.com
-
 
 
 =======> Windows 10 LTSC как Windows 7 (RU FAQ):
@@ -91,5 +89,3 @@ free portable FireWall test app ( 2ip.ru/firewalltest )
 one more FireWall online test after reboot ( grc.com/shieldsup )
 
 6. Перезагрузите ПК.
-
-7. Выразите благодарность, PayPal: mirageat@gmail.com
